@@ -2,7 +2,7 @@
 //자바에서 c로 이식할 예쩡
 int main(){
   int menu;
-  printf("Hello, Welcome to TRPG-Ver.C.1\n");
+  printf("Hello, Welcome to TRPG-Ver.C.1 We have java too\n");
   menu=MainGame();
   switch(menu){
     case 1: printf("GameOver\n");
@@ -14,5 +14,6 @@ int main(){
     default: printf("What happened?\n");
   }
   printf("Program is end");
-  return 0;
+    return 0;
+  
 }
