@@ -18,6 +18,7 @@ tydef struct monster {
 		String [] n= {"슬라임","고블린","드래곤"};
 		Random rand=new Random();
 		int r=rand.nextInt(10000);
+		//TEST
 		
 		money=m[category]+r%(12/(category+1));
 		hp=h[category]+ r%(18/(category+1));
