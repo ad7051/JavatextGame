@@ -6,7 +6,7 @@ tydef struct monster {
 	int fhp;
 	int hp;
 	char name[64];
-	public monster() {
+	tydef structmonster() {
 		atk=0;
 		hp=0;
 		name="Missing No";
@@ -27,18 +27,18 @@ tydef struct monster {
 		name=n[category];
 	}
 	
-	public String getName() {
+	char* getName() {
 		return name;
 	}
 	
-	public int getMoney() {
+	int getMoney() {
 		return money;
 	}
 	
-	public int getAtk() {
+	 int getAtk() {
 		return atk;
 	}
-	public int Atk() {
+	int Atk() {
 		Random rand= new Random();
 		int r=rand.nextInt(10000);
 		if(r%atk==0||r%atk==6||r%atk==10) {
@@ -53,7 +53,7 @@ tydef struct monster {
 		public int  getHp() {
 		return hp;
 	}
-		public void printHp() {
+	 void printHp() {
 			System.out.printf("체력: [");
 			if(fhp>40) {
 				for(int i=0;i<fhp;i+=5) {
@@ -69,7 +69,7 @@ tydef struct monster {
 				System.out.printf("]"+hp+"/"+fhp+"\n");
 			}
 		}
-	public void damage(int damage) {
+	void damage(int damage) {
 		hp-=damage;
 	}
 	
